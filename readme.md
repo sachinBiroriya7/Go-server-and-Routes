@@ -7,7 +7,7 @@ This project demonstrate a basic golang server creation. Parsing and Routing bet
 
 #### creating server :
 ```
-http.ListenAndServer(":PORT",nil)
+http.ListenAndServe(":PORT",nil)
 ```
 
 #### Handling routes
