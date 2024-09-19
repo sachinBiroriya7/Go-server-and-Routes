@@ -17,12 +17,12 @@ http.HandleFunc("/path",routeHandlerFunctionName)
 
 #### Parsing Static Html pages
 ```
-template.ParseFiles("/dir/path")
+template.ParseFiles("/dir/path/file.html")
 template.ParseGlob("/dir/path/*.html)
 ```
 
 #### Render HTML pages and pass data to them
 ```
-Execute(responseWriter, "index.html")
-Excetute(responseWriter,"index.html","pass vale to static page")
+Execute(responseWriter, nil)
+ExecuteTemplate(responseWriter,"index.html","pass vale to static page")
 ```
